@@ -1,0 +1,90 @@
+@charset "UTF-8";
+/*
+БЭМ (Блок, Элемент, Модификатор) — компонентный подход к веб-разработке.
+В его основе лежит принцип разделения интерфейса на независимые блоки. 
+Он позволяет легко и быстро разрабатывать интерфейсы любой сложности и
+повторно использовать существующий код, избегая «Copy-Paste».
+*/
+.main-container {
+  width: 1024px;
+  font: Arial;
+}
+
+.header {
+  background-color: white;
+}
+.header .header-logo {
+  width: 212px;
+  height: 45px;
+}
+.header .header-menu {
+  font-size: 14рх;
+  height: 22px;
+  color: #333;
+}
+
+.promo-block .promo-block-header {
+  font-size: 50рх;
+}
+.promo-block .promo-block-description-under-header {
+  font-size: 50рх;
+  line-height: 38px;
+}
+
+.Independent-block-logo {
+  background-color: #f1efec;
+}
+.Independent-block-logo .Independent-block-logo-image {
+  width: 277рх;
+  height: 59рх;
+}
+
+.Donate-now-block {
+  background-color: #9b242d;
+}
+.Donate-now-block .Donate-now-block-header {
+  font-size: 40px;
+}
+.Donate-now-block .Donate-now-block-description-under-header {
+  font-size: 16рх;
+  line-height: 22px;
+}
+
+.Sign-up-block {
+  background-color: #46a651;
+}
+.Sign-up-block .Sign-up-block-header {
+  font-size: 40px;
+}
+.Sign-up-block .Sign-up-block-description-under-header {
+  font-size: 16рх;
+  line-height: 22px;
+}
+.Sign-up-block .Sign-up-block-button {
+  background-color: #3483ee;
+  font-size: 16рх;
+  line-height: 22px;
+}
+
+.Facebook-block {
+  background-color: #3b5997;
+}
+.Facebook-block .Facebook-block-header {
+  font-size: 40px;
+}
+.Facebook-block .Facebook-block-description-under-header {
+  font-size: 16рх;
+  line-height: 22px;
+}
+
+.Footer-block {
+  background-color: #373838;
+}
+.Footer-block .Footer-block-header {
+  font-size: 40px;
+}
+.Footer-block .Footer-block-description-under-header {
+  font-size: 15рх;
+  line-height: 22px;
+  color: #939393;
+}

@@ -1,0 +1,128 @@
+$main-font: Arial;
+
+/*
+БЭМ (Блок, Элемент, Модификатор) — компонентный подход к веб-разработке.
+В его основе лежит принцип разделения интерфейса на независимые блоки. 
+Он позволяет легко и быстро разрабатывать интерфейсы любой сложности и
+повторно использовать существующий код, избегая «Copy-Paste».
+*/
+
+//Основной контейнер сайта
+.main-container {
+    width: 1024px; // Ширина контейнера 1024рх
+    font: $main-font; //Устанавливаем основной шрифт страницы
+}
+
+//Шапка сайта
+.header {
+    background-color: white; // Фон буквально "Белый" (к̶о̶л̶а̶м̶б̶у̶р̶)
+
+    //Логотип в шапке
+    .header-logo {
+        width: 212px; // Ширина 212px
+        height: 45px; // Высота 45px
+    }
+
+    //Меню c текстом
+    .header-menu {
+        font-size: 14рх; //Размер шрифта 14рх
+        height: 22px; // Высота 22px
+        color: #333; //Цвет  н̶а̶с̶т̶р̶о̶е̶н̶и̶е̶(текста) #333
+    }
+}
+
+//Промо блок:
+.promo-block {
+    //Заголовок в промо блоке
+    .promo-block-header {
+        font-size: 50рх; //Размер шрифта 50рх
+    }
+
+    //Описание под заголовком
+    .promo-block-description-under-header {
+        font-size: 50рх; //размер шрифта 24рх,
+        line-height: 38px; // высота строки 38px
+    }
+}
+
+//Независимый блок с логотипом
+.Independent-block-logo {
+    background-color: #f1efec; //Цвет фона #f1efec
+
+    //Картинки логотипа
+    .Independent-block-logo-image {
+        width: 277рх; // Ширина 277рх
+        height: 59рх; // Высота 59рх
+    }
+}
+
+//Блок "Donate now"
+.Donate-now-block {
+    background-color: #9b242d; //Цвет фона 9b242d
+
+    //Заголовок блока  "Donate now"
+    .Donate-now-block-header {
+        font-size: 40px; //Размер шрифта 40рх
+    }
+
+    //Описание под заголовком блока  "Donate now"
+    .Donate-now-block-description-under-header {
+        font-size: 16рх; //размер шрифта 16рх,
+        line-height: 22px; // высота строки 22px
+    }
+}
+
+//Блок "Sign up"
+.Sign-up-block {
+    background-color: #46a651; //Цвет фона #46a651
+
+    //Заголовок блока  "Sign up"
+    .Sign-up-block-header {
+        font-size: 40px; //Размер шрифта 40рх
+    }
+
+    //Описание под заголовком блока   "Sign up"
+    .Sign-up-block-description-under-header {
+        font-size: 16рх; //размер шрифта 16рх,
+        line-height: 22px; // высота строки 22px
+    }
+
+    .Sign-up-block-button {
+        background-color: #3483ee; //Цвет фона #3483ee
+        font-size: 16рх; //размер шрифта 16рх,
+        line-height: 22px; // высота строки 22px
+    }
+}
+
+//Блок "Facebook"
+.Facebook-block {
+    background-color: #3b5997; //Цвет фона #3b5997
+
+    //Заголовок блока  "Facebook"
+    .Facebook-block-header {
+        font-size: 40px; //Размер шрифта 40рх
+    }
+
+    //Описание под заголовком блока   "Facebook"
+    .Facebook-block-description-under-header {
+        font-size: 16рх; //размер шрифта 16рх,
+        line-height: 22px; // высота строки 22px
+    }
+}
+
+//Блок "Footer"
+.Footer-block {
+    background-color: #373838; //Цвет фона #373838
+
+    //Заголовок блока  "Footer"
+    .Footer-block-header {
+        font-size: 40px; //Размер шрифта 40рх
+    }
+
+    //Описание под заголовком блока   "Footer"
+    .Footer-block-description-under-header {
+        font-size: 15рх; //размер шрифта 16рх,
+        line-height: 22px; // высота строки 22px
+        color: #939393; //цвет текста 939393
+    }
+}
