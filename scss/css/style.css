@@ -5,6 +5,16 @@
 Он позволяет легко и быстро разрабатывать интерфейсы любой сложности и
 повторно использовать существующий код, избегая «Copy-Paste».
 */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .main-container {
   width: 1024px;
   font: Arial;
@@ -41,6 +51,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .header .header-menu u {
   display: -webkit-inline-box;
@@ -58,11 +71,43 @@
   list-style-type: none;
 }
 
-.promo-block .promo-block-header {
+.promo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-size: 100%, auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../media/img/image.jpg);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.promo-block .promo-block-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.promo-block .promo-block-content-header {
   font: 50px Arial;
 }
-.promo-block .promo-block-description-under-header {
-  font: 50px Arial;
+.promo-block .promo-block-content-description-under-header {
+  font: 24px Arial;
   line-height: 38px;
 }
 
