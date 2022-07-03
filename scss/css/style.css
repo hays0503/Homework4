@@ -6,13 +6,9 @@
 повторно использовать существующий код, избегая «Copy-Paste».
 */
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .main-container {
@@ -21,17 +17,12 @@ body {
 }
 
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   background-color: white;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 .header .header-logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 212px;
   height: 45px;
@@ -40,28 +31,18 @@ body {
   background-image: url(../../media/img/logo.png);
 }
 .header .header-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .header .header-menu u {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-column-gap: 2rem;
-     -moz-column-gap: 2rem;
-          column-gap: 2rem;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
   text-decoration: none;
 }
 .header .header-menu li {
@@ -72,8 +53,6 @@ body {
 }
 
 .promo-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 600px;
@@ -81,27 +60,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../../media/img/image.jpg);
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .promo-block .promo-block-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 .promo-block .promo-block-content-header {
   font: 50px Arial;
@@ -112,11 +77,20 @@ body {
 }
 
 .Independent-block-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 341px;
+  height: 341px;
   background-color: #f1efec;
 }
 .Independent-block-logo .Independent-block-logo-image {
-  width: 277рх;
-  height: 59рх;
+  display: flex;
+  width: 212px;
+  height: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../media/img/logo.png);
 }
 
 .Donate-now-block {
@@ -167,4 +141,4 @@ body {
   font: 15px Arial;
   line-height: 22px;
   color: #939393;
-}
+}/*# sourceMappingURL=style.css.map */

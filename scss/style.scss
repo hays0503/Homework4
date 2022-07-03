@@ -72,7 +72,6 @@ body {
   .promo-block-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
@@ -90,12 +89,22 @@ body {
 
 //Независимый блок с логотипом
 .Independent-block-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 341px;
+  height: 341px;
   background-color: #f1efec; //Цвет фона #f1efec
 
   //Картинки логотипа
   .Independent-block-logo-image {
-    width: 277рх; // Ширина 277рх
-    height: 59рх; // Высота 59рх
+    display: flex;
+    width: 212px; // Ширина 212px
+    height: 45px; // Высота 45px
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../../media/img/logo.png);
   }
 }
 
