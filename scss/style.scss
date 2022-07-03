@@ -110,6 +110,13 @@ body {
 
 //Блок "Donate now"
 .Donate-now-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 341px;
+  height: 341px;
   background-color: #9b242d; //Цвет фона 9b242d
 
   //Заголовок блока  "Donate now"
@@ -126,29 +133,66 @@ body {
 
 //Блок "Sign up"
 .Sign-up-block {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+
+  width: 682px;
+  height: 341px;
+
   background-color: #46a651; //Цвет фона #46a651
 
   //Заголовок блока  "Sign up"
   .Sign-up-block-header {
+    padding-right: 25px;
     font: 40px $main-font; //Размер шрифта 40рх
   }
 
   //Описание под заголовком блока   "Sign up"
   .Sign-up-block-description-under-header {
+    padding-right: 25px;
+    text-align: end;
     font: 16px $main-font; //размер шрифта 16рх,
     line-height: 22px; // высота строки 22px
   }
 
   .Sign-up-block-button {
-    background-color: #3483ee; //Цвет фона #3483ee
-    font: 16px $main-font; //размер шрифта 16рх,
-    line-height: 22px; // высота строки 22px
+    padding-right: 25px;
+    button {
+      padding: 15px;
+      background-color: #3483ee; //Цвет фона #3483ee
+      font: 16px $main-font; //размер шрифта 16рх,
+      line-height: 22px; // высота строки 22px
+    }
   }
 }
 
 //Блок "Facebook"
 .Facebook-block {
+  width: 341px;
+  height: 341px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   background-color: #3b5997; //Цвет фона #3b5997
+
+  .Image-block-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 35px;
+    height: 75px;
+
+    img {
+      width: 35px;
+      height: 75px;
+    }
+  }
 
   //Заголовок блока  "Facebook"
   .Facebook-block-header {
@@ -157,6 +201,7 @@ body {
 
   //Описание под заголовком блока   "Facebook"
   .Facebook-block-description-under-header {
+    color: rgb(255, 255, 255);
     font: 16px $main-font; //размер шрифта 16рх,
     line-height: 22px; // высота строки 22px
   }
@@ -164,6 +209,7 @@ body {
 
 //Блок "Footer"
 .Footer-block {
+  padding: 35px;
   background-color: #373838; //Цвет фона #373838
 
   //Заголовок блока  "Footer"
@@ -173,8 +219,73 @@ body {
 
   //Описание под заголовком блока   "Footer"
   .Footer-block-description-under-header {
-    font: 15px $main-font; //размер шрифта 16рх,
-    line-height: 22px; // высота строки 22px
-    color: #939393; //цвет текста 939393
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    //Меню c текстом
+    .footer-menu {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      width: fit-content;
+
+      u {
+        display: inline-flex;
+        column-gap: 2rem;
+        text-decoration: none;
+      }
+      li {
+        font: 15px $main-font; //Размер шрифта 15рх
+        line-height: 22px; // высота строки 22px
+        color: #939393; //Цвет  н̶а̶с̶т̶р̶о̶е̶н̶и̶е̶(текста) #939393
+        list-style-type: none;
+      }
+    }
   }
+}
+
+.Image-block-short {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 341px;
+  height: 341px;
+
+  img {
+    width: 341px;
+    height: 341px;
+  }
+}
+
+.Image-block-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  width: 682px;
+  height: 341px;
+
+  img {
+    width: 682px;
+    height: 341px;
+  }
+}
+
+#row1 {
+  display: flex;
+  flex-direction: row;
+}
+#row2 {
+  display: flex;
+  flex-direction: row;
+}
+#row3 {
+  display: flex;
+  flex-direction: row;
 }

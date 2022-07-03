@@ -94,6 +94,12 @@ body {
 }
 
 .Donate-now-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 341px;
+  height: 341px;
   background-color: #9b242d;
 }
 .Donate-now-block .Donate-now-block-header {
@@ -105,40 +111,137 @@ body {
 }
 
 .Sign-up-block {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  width: 682px;
+  height: 341px;
   background-color: #46a651;
 }
 .Sign-up-block .Sign-up-block-header {
+  padding-right: 25px;
   font: 40px Arial;
 }
 .Sign-up-block .Sign-up-block-description-under-header {
+  padding-right: 25px;
+  text-align: end;
   font: 16px Arial;
   line-height: 22px;
 }
 .Sign-up-block .Sign-up-block-button {
+  padding-right: 25px;
+}
+.Sign-up-block .Sign-up-block-button button {
+  padding: 15px;
   background-color: #3483ee;
   font: 16px Arial;
   line-height: 22px;
 }
 
 .Facebook-block {
+  width: 341px;
+  height: 341px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #3b5997;
+}
+.Facebook-block .Image-block-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35px;
+  height: 75px;
+}
+.Facebook-block .Image-block-icon img {
+  width: 35px;
+  height: 75px;
 }
 .Facebook-block .Facebook-block-header {
   font: 40px Arial;
 }
 .Facebook-block .Facebook-block-description-under-header {
+  color: rgb(255, 255, 255);
   font: 16px Arial;
   line-height: 22px;
 }
 
 .Footer-block {
+  padding: 35px;
   background-color: #373838;
 }
 .Footer-block .Footer-block-header {
   font: 40px Arial;
 }
 .Footer-block .Footer-block-description-under-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Footer-block .Footer-block-description-under-header .footer-menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Footer-block .Footer-block-description-under-header .footer-menu u {
+  display: inline-flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  text-decoration: none;
+}
+.Footer-block .Footer-block-description-under-header .footer-menu li {
   font: 15px Arial;
   line-height: 22px;
   color: #939393;
+  list-style-type: none;
+}
+
+.Image-block-short {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 341px;
+  height: 341px;
+}
+.Image-block-short img {
+  width: 341px;
+  height: 341px;
+}
+
+.Image-block-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 682px;
+  height: 341px;
+}
+.Image-block-long img {
+  width: 682px;
+  height: 341px;
+}
+
+#row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#row3 {
+  display: flex;
+  flex-direction: row;
 }/*# sourceMappingURL=style.css.map */
