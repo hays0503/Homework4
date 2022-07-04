@@ -290,9 +290,15 @@ body {
   flex-direction: row;
 }
 
-a.text:active, /* активная/посещенная ссылка */
-a.text:hover,  /* при наведении */
-a.text {
+a.text-main:active, /* активная/посещенная ссылка */
+a.text-main:hover,  /* при наведении */
+a.text-main {
   text-decoration: none;
-  color: #000000;
+  color: #333;
+}
+a.text-footer:active, /* активная/посещенная ссылка */
+a.text-footer:hover,  /* при наведении */
+a.text-footer {
+  text-decoration: none;
+  color: #939393;
 }

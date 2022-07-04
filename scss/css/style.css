@@ -372,9 +372,16 @@ body {
           flex-direction: row;
 }
 
-a.text:active,
-a.text:hover,
-a.text {
+a.text-main:active,
+a.text-main:hover,
+a.text-main {
   text-decoration: none;
-  color: #000000;
+  color: #333;
+}
+
+a.text-footer:active,
+a.text-footer:hover,
+a.text-footer {
+  text-decoration: none;
+  color: #939393;
 }
