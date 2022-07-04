@@ -51,7 +51,7 @@ body {
     li {
       font: 14px $main-font; //Размер шрифта 14рх
       height: 22px; // Высота 22px
-      color: #333; //Цвет  н̶а̶с̶т̶р̶о̶е̶н̶и̶е̶(текста) #333
+      color: #333 !important; //Цвет  н̶а̶с̶т̶р̶о̶е̶н̶и̶е̶(текста) #333
       list-style-type: none;
     }
   }
@@ -201,7 +201,7 @@ body {
 
   //Описание под заголовком блока   "Facebook"
   .Facebook-block-description-under-header {
-    color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important;
     font: 16px $main-font; //размер шрифта 16рх,
     line-height: 22px; // высота строки 22px
   }
@@ -240,7 +240,7 @@ body {
       li {
         font: 15px $main-font; //Размер шрифта 15рх
         line-height: 22px; // высота строки 22px
-        color: #939393; //Цвет  н̶а̶с̶т̶р̶о̶е̶н̶и̶е̶(текста) #939393
+        color: #939393 !important; //Цвет  н̶а̶с̶т̶р̶о̶е̶н̶и̶е̶(текста) #939393
         list-style-type: none;
       }
     }
@@ -288,4 +288,11 @@ body {
 #row3 {
   display: flex;
   flex-direction: row;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: #000000;
 }
