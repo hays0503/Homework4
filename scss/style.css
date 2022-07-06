@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/*
+БЭМ (Блок, Элемент, Модификатор) — компонентный подход к веб-разработке.
+В его основе лежит принцип разделения интерфейса на независимые блоки. 
+Он позволяет легко и быстро разрабатывать интерфейсы любой сложности и
+повторно использовать существующий код, избегая «Copy-Paste».
+*/
+body {
+  display: flex;
+  width: auto;
+  justify-content: center;
+}
+
+.main-container {
+  width: 1024px;
+  font: Arial;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  background-color: white;
+  justify-content: space-around;
+}
+.header .header-logo {
+  display: flex;
+  width: 212px;
+  height: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../media/img/logo.png);
+}
+.header .header-menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.header .header-menu ul {
+  display: inline-flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  text-decoration: none;
+}
+.header .header-menu li {
+  font: 14px Arial;
+  height: 22px;
+  color: #333;
+  list-style-type: none;
+}
+
+.promo-block {
+  display: flex;
+  width: 100%;
+  height: 600px;
+  background-size: 100%, auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(../../media/img/image.jpg);
+  justify-content: center;
+  align-items: center;
+}
+.promo-block .promo-block-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promo-block .promo-block-content-header {
+  font: 50px Arial;
+}
+.promo-block .promo-block-content-description-under-header {
+  font: 24px Arial;
+  line-height: 38px;
+}
+
+.Independent-block-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 341px;
+  height: 341px;
+  background-color: #f1efec;
+}
+.Independent-block-logo .Independent-block-logo-image {
+  display: flex;
+  width: 212px;
+  height: 45px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(../../media/img/logo.png);
+}
+
+.Donate-now-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 341px;
+  height: 341px;
+  background-color: #9b242d;
+}
+.Donate-now-block .Donate-now-block-header {
+  font: 40px Arial;
+}
+.Donate-now-block .Donate-now-block-description-under-header {
+  font: 16px Arial;
+  line-height: 22px;
+}
+
+.Sign-up-block {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+  width: 682px;
+  height: 341px;
+  background-color: #46a651;
+}
+.Sign-up-block .Sign-up-block-header {
+  padding-right: 25px;
+  font: 40px Arial;
+}
+.Sign-up-block .Sign-up-block-description-under-header {
+  padding-right: 25px;
+  text-align: end;
+  font: 16px Arial;
+  line-height: 22px;
+}
+.Sign-up-block .Sign-up-block-button {
+  padding-right: 25px;
+}
+.Sign-up-block .Sign-up-block-button button {
+  padding: 15px;
+  background-color: #3483ee;
+  font: 16px Arial;
+  line-height: 22px;
+}
+
+.Facebook-block {
+  width: 341px;
+  height: 341px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3b5997;
+}
+.Facebook-block .Image-block-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35px;
+  height: 75px;
+}
+.Facebook-block .Image-block-icon img {
+  width: 35px;
+  height: 75px;
+}
+.Facebook-block .Facebook-block-header {
+  font: 40px Arial;
+}
+.Facebook-block .Facebook-block-description-under-header {
+  color: rgb(255, 255, 255);
+  font: 16px Arial;
+  line-height: 22px;
+}
+
+.Footer-block {
+  padding: 35px;
+  background-color: #373838;
+}
+.Footer-block .Footer-block-header {
+  font: 40px Arial;
+}
+.Footer-block .Footer-block-description-under-header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+}
+.Footer-block .Footer-block-description-under-header .footer-menu {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Footer-block .Footer-block-description-under-header .footer-menu u {
+  display: inline-flex;
+  -moz-column-gap: 2rem;
+       column-gap: 2rem;
+  text-decoration: none;
+}
+.Footer-block .Footer-block-description-under-header .footer-menu li {
+  font: 15px Arial;
+  line-height: 22px;
+  color: #939393;
+  list-style-type: none;
+}
+
+.Image-block-short {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 341px;
+  height: 341px;
+}
+.Image-block-short img {
+  width: 341px;
+  height: 341px;
+}
+
+.Image-block-long {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 682px;
+  height: 341px;
+}
+.Image-block-long img {
+  width: 682px;
+  height: 341px;
+}
+
+#row1 {
+  display: flex;
+  flex-direction: row;
+}
+
+#row2 {
+  display: flex;
+  flex-direction: row;
+}
+
+#row3 {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=style.css.map */
